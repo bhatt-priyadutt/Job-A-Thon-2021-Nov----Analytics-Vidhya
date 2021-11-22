@@ -10,6 +10,17 @@
 * Private Leaderboard rank - 258
 
 ## Approach
-Data - 
-<img src="images/data_jobathon.png" />
+### Data - 
 
+<img src="https://github.com/bhatt-priyadutt/priyadutt-portfolio/blob/main/images/data_jobathon.png" width=800px height=400px />
+
+### Data Preprocessing
+
+* Replacing 1 with rows in which employees already had a last working date and 0 who had NaN values.
+* Converting Catgeorical Variables into Numeric Features.
+* Grouping By the Data by Employee Ids(Emp_ID) using the central tendency median for employee data.
+* Feature Scaling the features for distance based algorithm (K-means).
+
+### Model Build
+
+* Used K-means algorithm with 2 clusters to differ the employees leaving the organization or not.
